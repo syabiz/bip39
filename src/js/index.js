@@ -2249,7 +2249,7 @@
     }
 
     var networks = [
-        {
+		{
             name: "AC - Asiacoin",
             onSelect: function() {
                 network = libs.bitcoin.networks.asiacoin;
@@ -2629,6 +2629,20 @@
             onSelect: function() {
                 network = libs.bitcoin.networks.dogecointestnet;
                 setHdCoin(1);
+            },
+        },
+        {
+            name: "DORK - Dorkcoin",
+            onSelect: function() {
+                network = libs.bitcoin.networks.dorkcoin;
+                setHdCoin(4151811);
+            },
+        },
+        {
+            name: "DORK - Dorkcoin Testnet",
+            onSelect: function() {
+                network = libs.bitcoin.networks.dorkcointestnet;
+                setHdCoin(415181125);
             },
         },
         {
@@ -3117,6 +3131,13 @@
             onSelect: function() {
                 network = libs.bitcoin.networks.namecoin;
                 setHdCoin(7);
+            },
+        },
+        {
+            name: "NNS - 996coin",
+            onSelect: function() {
+                network = libs.bitcoin.networks.coin996;
+                setHdCoin(996);
             },
         },
         {

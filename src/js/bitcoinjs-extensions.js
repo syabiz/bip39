@@ -1876,3 +1876,38 @@ libs.bitcoin.networks.argoneum = {
   scriptHash: 0x61,
   wif: 0xbf
 };
+
+// ── Dorkcoin (bitcoinjs-extensions.js ───────────────
+libs.bitcoin.networks.dorkcoin = {
+    messagePrefix: '\x18Dorkcoin Signed Message:\n',
+    bip32: {
+        public:  0x0488b21e,
+        private: 0x0488ade4
+    },
+    pubKeyHash: 0x1e,
+    scriptHash: 0x08,
+    wif: 0x9e
+};
+
+libs.bitcoin.networks.dorkcointestnet = {
+    messagePrefix: '\x18Dorkcoin Signed Message:\n',
+    bip32: {
+        public:  0x043587cf,
+        private: 0x04358394
+    },
+    pubKeyHash: 0x1e,
+    scriptHash: 0x08,
+    wif: 0xef
+};
+
+// ── 996coin (bitcoinjs-extensions.js ── 
+libs.bitcoin.networks.coin996 = {
+    messagePrefix: '\x18996Coin Signed Message:\n',
+    bip32: {
+        public: 0x0488b21e,
+        private: 0x0488ade4
+    },
+    pubKeyHash: 0x35,
+    scriptHash: 0x05,
+    wif: 0x80
+};

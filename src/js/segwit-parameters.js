@@ -765,4 +765,90 @@ libs.bitcoin.networks.sugarchaintestnet.p2wpkhInP2sh = {
 	wif: 0xef
 };
 
+// ── Dorkcoin SegWit Parameters (segwit-parameters.js) ──────────────────────────────────
+// BIP49 — Nested SegWit P2WPKHINP2SH mainnet
+libs.bitcoin.networks.dorkcoin.p2wpkhInP2sh = {
+    baseNetwork: "dorkcoin",
+    messagePrefix: '\x19Dorkcoin Signed Message:\n',
+    bech32: 'dork',
+    bip32: {
+        public:  0x049d7cb2,
+        private: 0x049d7878
+    },
+    pubKeyHash: 0x1e,
+    scriptHash: 0x08,
+    wif:        0x9e
+};
+
+// BIP84 — Native SegWit P2WPKH mainnet
+libs.bitcoin.networks.dorkcoin.p2wpkh = {
+    baseNetwork: "dorkcoin",
+    messagePrefix: '\x19Dorkcoin Signed Message:\n',
+    bech32: 'dork',
+    bip32: {
+        public:  0x04b24746,
+        private: 0x04b2430c
+    },
+    pubKeyHash: 0x1e,
+    scriptHash: 0x5a,
+    wif:        0x9e
+};
+
+// BIP86 — Taproot P2TR mainnet
+libs.bitcoin.networks.dorkcoin.p2tr = {
+    baseNetwork: "dorkcoin",
+    messagePrefix: '\x19Dorkcoin Signed Message:\n',
+    bech32: 'dorkcoin',
+    bip32: {
+        public:  0x0488b21e,
+        private: 0x0488ade4
+    },
+    pubKeyHash: 0x1e,
+    scriptHash: 0x5a,
+    wif:        0x9e
+};
+
+// BIP84 — Native SegWit P2WPKH testnet
+libs.bitcoin.networks.dorkcointestnet.p2wpkh = {
+    baseNetwork: "dorkcointestnet",
+    messagePrefix: '\x19Dorkcoin Signed Message:\n',
+    bech32: 'dorktest',
+    bip32: {
+        public:  0x045f1cf6,
+        private: 0x045f18bc
+    },
+    pubKeyHash: 0x1e,
+    scriptHash: 0x5a,
+    wif:        0xef
+};
+
+// ── 996coin SegWit Parameters (segwit-parameters.js) ──────────────────────────────────
+// BIP49 — Nested SegWit P2WPKHINP2SH mainnet
+libs.bitcoin.networks.coin996.p2wpkhInP2sh = {
+    baseNetwork: "coin996",
+    messagePrefix: '\x19996coin Signed Message:\n',
+    bech32: '8',
+    bip32: {
+        public:  0x049d7cb2,
+        private: 0x049d7878
+    },
+    pubKeyHash: 0x35,
+    scriptHash: 0x12,
+    wif: 0x80
+};
+
+// BIP84 — Native SegWit P2WPKH mainnet
+libs.bitcoin.networks.coin996.p2wpkh = {
+    baseNetwork: "coin996",
+    messagePrefix: '\x19996coin Signed Message:\n',
+    bech32: '996',
+    bip32: {
+        public: 0x04b24746,
+        private: 0x04b2430c
+    },
+    pubKeyHash: 0x35,
+    scriptHash: 0x07,
+    wif: 0x80
+};
+
 })();
